@@ -2,9 +2,9 @@
 
 {% block content %}
 {% for post in object_list %}
-    <div class="post-entry">
+    <div class="card p-3 mt-3">
         <a href="{% url 'post_details' post.pk %}">{{post.title}}</a>
-        <p>{{post.body}}</p>
+        <p class="card-text">{{post.body}}</p>
     </div>
 {% endfor %}
 {% endblock %}
