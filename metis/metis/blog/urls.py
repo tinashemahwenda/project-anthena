@@ -6,3 +6,4 @@ urlpatterns = [
     path('',BlogListView.as_view(),name='home'),
 
 ]
+
